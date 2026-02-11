@@ -1,5 +1,16 @@
+import streamlit as st
 
+# Simple authentication gate
+if "authenticated" not in st.session_state:
+    st.session_state.authenticated = False
 
+if not st.session_state.authenticated:
+    password = st.text_input("Enter Password", type="password")
+    if password == st.secrets["APP_PASSWORD"]:
+        st.session_state.authenticated = True
+        st.rerun()
+    else:
+        st.stop()
 
 
 import streamlit as st
@@ -32,7 +43,7 @@ def show_feedback():
 
 # Setup stage for collecting user details
 if not st.session_state.setup_complete:
-    st.subheader('Personal Information')   # “If the setup phase is NOT finished yet, show the Personal Information section.”
+    st.subheader('Personal Information')
 
     # Initialize session state for personal information
     if "name" not in st.session_state:
@@ -72,8 +83,8 @@ if not st.session_state.setup_complete:
     with col2:
         st.session_state["position"] = st.selectbox(
             "Choose a position",
-            ("Data Scientist", "Data Engineer", "Data Architect", "ML Engineer", "BI Analyst", "Financial Analyst"),
-            index=("Data Scientist", "Data Engineer", "Data Architect", "ML Engineer", "BI Analyst", "Financial Analyst").index(st.session_state["position"])
+            ("Data Scientist", "Data Engineer", "ML Engineer", "BI Analyst", "Financial Analyst"),
+            index=("Data Scientist", "Data Engineer", "ML Engineer", "BI Analyst", "Financial Analyst").index(st.session_state["position"])
         )
 
     st.session_state["company"] = st.selectbox(
@@ -90,7 +101,7 @@ if not st.session_state.setup_complete:
 
 # Interview phase
 if st.session_state.setup_complete and not st.session_state.feedback_shown and not st.session_state.chat_complete:
-# “Show the interview chat only when setup is done, the chat isn’t finished, and feedback hasn’t been shown.”
+
     st.info(
     """
     Start by introducing yourself

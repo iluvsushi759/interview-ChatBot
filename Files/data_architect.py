@@ -25,14 +25,14 @@ if not st.session_state.authenticated:
 st.set_page_config(page_title="Architecture Strategy Simulator", page_icon="🏗")
 
 # ============================================================
-# 🎨 CUSTOM PROFESSIONAL DARK UI (BRIGHTER VERSION)
+# 🎨 CUSTOM PROFESSIONAL DARK UI (BRIGHT TEXT UNIFIED)
 # ============================================================
 
 st.markdown("""
 <style>
 
 [data-testid="stAppViewContainer"] {
-    background-color: #181c24; /* slightly lighter dark */
+    background-color: #1b1f28; /* slightly lighter dark background */
 }
 
 .block-container {
@@ -40,24 +40,18 @@ st.markdown("""
     max-width: 1100px;
 }
 
-/* Headers */
-h1, h2, h3 {
-    color: #f5f7fa; /* brighter white for titles */
-    font-weight: 700;
-}
-
-/* Paragraphs, labels, subheaders inside cards */
-.sim-card p, .sim-card sub, .sim-card label {
-    color: #e0e6f0; /* light grey/white for readability */
+/* Headers and text unified color */
+h1, h2, h3, p, sub, label, .stMarkdown, .stTextInput>div>div>input, .stSelectbox>div>div>div {
+    color: #f5f7fa !important; /* bright, crisp, same as main tagline */
     font-weight: 500;
 }
 
 /* Simulation / card containers */
 .sim-card {
-    background-color: #262b38; /* lighter dark, easy on eyes */
+    background-color: #272b36; /* slightly lighter dark for contrast */
     padding: 25px;
     border-radius: 12px;
-    border: 1px solid #3a3f4d;
+    border: 1px solid #3b3f4d;
     margin-bottom: 25px;
 }
 

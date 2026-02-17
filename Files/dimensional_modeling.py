@@ -2,9 +2,22 @@ import streamlit as st
 from openai import OpenAI
 from streamlit_js_eval import streamlit_js_eval
 
-# Initialize session state keys if they don't exist
-if 'setup_complete' not in st.session_state:
-    st.session_state.setup_complete = False
+# ===============================
+# Initialize session state keys
+# ===============================
+session_keys_defaults = {
+    "setup_complete": False,
+    "chat_complete": False,
+    "feedback_shown": False,
+    "evaluation_mode": False,
+    "user_input": "",
+    "model_loaded": False
+}
+
+for key, default_value in session_keys_defaults.items():
+    if key not in st.session_state:
+        st.session_state[key] = default_value
+
 
 # ============================================================
 # ⚙ SETUP PHASE

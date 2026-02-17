@@ -18,6 +18,23 @@ for key, default_value in session_keys_defaults.items():
     if key not in st.session_state:
         st.session_state[key] = default_value
 
+# ============================================================
+# 🔐 PASSWORD PROTECTION
+# ============================================================
+
+if "authenticated" not in st.session_state:
+    st.session_state.authenticated = False
+
+if not st.session_state.authenticated:
+    st.set_page_config(page_title="Secure Access", page_icon="🔐")
+    password = st.text_input("Enter Password", type="password")
+    if password == st.secrets["APP_PASSWORD"]:
+        st.session_state.authenticated = True
+        st.rerun()
+    else:
+        st.stop()
+
+
 
 # ============================================================
 # ⚙ SETUP PHASE

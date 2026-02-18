@@ -2,7 +2,7 @@ Data_architect.py is a sample data Architecture challenge to yourself.  Describe
 This model will respond to by challenging things you might have not thought about or might have missed.
 Deploy this to gitHub and connect your GitHub account to Streamlit IO.
 
-Dimension_modeling.py is a tool that will assist you creating your... you guessed it, Data Modeling!  Obviously this shouldn't replace your ER diagram but
+Dimensional_modeling.py is a tool that will assist you creating your... you guessed it, Data Modeling!  Obviously this shouldn't replace your ER diagram but
 this is a tool that can make us DataWarehouse / Data Architects more efficient or something that we may overlooked.
 
 So below is sample of how it can be used:

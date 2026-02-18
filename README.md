@@ -3,7 +3,7 @@ This model will respond to by challenging things you might have not thought abou
 Deploy this to gitHub and connect your GitHub account to Streamlit IO.
 
 Dimensional_modeling.py is a tool that will assist you creating your....... you guessed it, Data Modeling!  Obviously this shouldn't replace your ER diagram but
-this is a tool that can make us, DataWarehouse / Data Architects, more efficient or help us with a particular we may have overlooked.
+this is a tool that can make us, DataWarehouse / Data / ML Architects, more efficient or help us with a particular we may have overlooked.
 
 So below is sample of how it can be used:
 

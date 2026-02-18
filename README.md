@@ -2,8 +2,8 @@ Data_architect.py is a sample data Architecture challenge to yourself.  Describe
 This model will respond to by challenging things you might have not thought about or might have missed.
 Deploy this to gitHub and connect your GitHub account to Streamlit IO.
 
-Dimensional_modeling.py is a tool that will assist you creating your... you guessed it, Data Modeling!  Obviously this shouldn't replace your ER diagram but
-this is a tool that can make us DataWarehouse / Data Architects more efficient or something that we may overlooked.
+Dimensional_modeling.py is a tool that will assist you creating your....... you guessed it, Data Modeling!  Obviously this shouldn't replace your ER diagram but
+this is a tool that can make us, DataWarehouse / Data Architects, more efficient or help us with a particular we may have overlooked.
 
 So below is sample of how it can be used:
 
@@ -50,6 +50,7 @@ When enabled, the AI will not just record your inputs, it will also review and s
 
 If you leave it disabled, the app simply collects your inputs (business process, grain, source tables, KPIs) so you can focus on building your model without being “graded” or challenged.
 
-Passwords should be stored in your secrets.toml but i've set it to gitignore.  Also don't foreget to set your passwords in Streamlit IO.
+Passwords should be stored in your secrets.toml but i've set it to gitignore.  Also don't forget to set your passwords in Streamlit IO.
+Also do NOT put in any data in there.  Just fill in your DDLs and metadata is all you need.
 
 Have fun!

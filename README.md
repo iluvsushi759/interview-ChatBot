@@ -49,7 +49,7 @@ When enabled, the AI will not just record your inputs, it will also review and s
 
 If you leave it disabled, the app simply collects your inputs (business process, grain, source tables, KPIs) so you can focus on building your model without being “graded” or challenged.
 
-Passwords should be stored in your secrets.toml but i've set it to gitignore.  Also don't forget to set your passwords in Streamlit IO.
+Passwords should be stored in your secrets.toml but I've set it to gitignore.  Also don't forget to set your passwords in Streamlit IO.
 Also do NOT put in any data in there.  Just fill in your DDLs and metadata is all you need.
 
 Have fun!

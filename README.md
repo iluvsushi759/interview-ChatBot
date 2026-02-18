@@ -45,7 +45,7 @@ Please suggest:
 - Recommend clustering keys for Snowflake to optimize queries  
 - Suggest any indexes or optimization strategies
 
-6️⃣ **for Evaluation Mode**  
+6️⃣ **Evaluation Mode**  
 When enabled, the AI will not just record your inputs, it will also review and score your dimensional modeling decisions, providing feedback on things like grain correctness, KPIs, conformed dimension design, and overall business alignment.  
 
 If you leave it disabled, the app simply collects your inputs (business process, grain, source tables, KPIs) so you can focus on building your model without being “graded” or challenged.

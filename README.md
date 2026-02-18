@@ -7,7 +7,7 @@ this is a tool that can make us, DataWarehouse / Data / ML Architects, more effi
 
 So below is sample of how it can be used:
 
-1️⃣**Describe the business process you want to model**
+1️⃣ **Describe the business process you want to model**
 I need help designing a sales data model for a retail chain. 
 We have daily sales data for multiple stores and products, 
 including revenue, quantity, and discounts. 

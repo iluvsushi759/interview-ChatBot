@@ -2,8 +2,7 @@ Data_architect.py is a sample data Architecture challenge to yourself.  Describe
 This model will respond to by challenging things you might have not thought about or might have missed.
 Deploy this to gitHub and connect your GitHub account to Streamlit IO.
 
-Dimensional_modeling.py is a tool that will assist you creating your....... you guessed it, Data Modeling!  Obviously this shouldn't replace your ER diagram but
-this is a tool that can make us, DataWarehouse / Data / ML Architects, more efficient or help us with a particular we may have overlooked.
+Dimensional_modeling.py is a tool that will assist you creating your....... you guessed it, Data Modeling!  Obviously, this modeling model, shouldn't replace your ER diagram but this is a tool that can make us, DataWarehouse / Data / ML Architects, more efficient or help us with a particular we may have overlooked.  This model also uses gpt 40mini.  If you want, you can always downgrade them to gpt 3.5 turbo to lower your token cost. 
 
 So below is sample of how it can be used:
 
